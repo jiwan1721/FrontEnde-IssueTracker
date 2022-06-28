@@ -1,16 +1,19 @@
 <template>
 <div id="app">
-  <showUserVue></showUserVue>
+
+  <loginUser></loginUser>
 </div>
 </template>
 
 <script>
-import showUserVue from './components/showUser.vue'
+import loginUser from './components/loginUser.vue'
+// import showUserVue from './components/showUser.vue'
 
 export default {
   name: 'App',
   components: {
-    showUserVue
+    // showUserVue,
+    loginUser
   }
 }
 </script>

@@ -25,7 +25,7 @@ import axios from 'axios';
         methods: {
             async getUserData(){
                 try {
-                    const response = await axios.get('http://127.0.0.1:8000/user/');
+                    const response = await axios.get('user');
                     this.users=response.data;
                     console.log("-----",this.users)
                 } catch (error){

@@ -9,11 +9,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "@vue/cli": "^5.0.6",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
-    "vue-cli": "^2.9.6"
+    "vue-cli": "^2.9.6",
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
