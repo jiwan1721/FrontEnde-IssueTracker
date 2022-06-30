@@ -2,17 +2,18 @@
 <div id="app">
 
   <loginUser></loginUser>
+  <showUserVue></showUserVue>
 </div>
 </template>
 
 <script>
 import loginUser from './components/loginUser.vue'
-// import showUserVue from './components/showUser.vue'
+import showUserVue from './components/showUser.vue'
 
 export default {
   name: 'App',
   components: {
-    // showUserVue,
+    showUserVue,
     loginUser
   }
 }

@@ -51,8 +51,8 @@ export default {
     // }
     methods: {
         login(){
-            const header={'Authorization':'token a64c9bcf7b2575d0539f97e85065738ebfc3ebaf'}
-            axios.post('/api-auth/login/?next=/ ', header, {
+            // const header={'Authorization':'token a64c9bcf7b2575d0539f97e85065738ebfc3ebaf'}
+            axios.post('api/token/', {
                 username : this.username,
                 password: this.password,
             })
