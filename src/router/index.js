@@ -4,6 +4,7 @@
 //we can import all vue component
 import loginUser from '@/components/loginUser.vue';
 import showUser from '@/components/showUser.vue';
+import Home from '@/components/Home.vue';
 import Router from 'vue-router'
 // import VueAxios from 'vue-axios';
 import Vue from 'vue';
@@ -30,6 +31,15 @@ export const router = new Router({
     mode :'history',
     routes: [
         {
+            path:'/',
+            name:'homeVue',
+            component:Home
+        },
+        {
+            path:'/homeVue',
+            component:Home
+        },
+        {
            path : '/',
            name:'showUser',
            component:showUser
@@ -39,7 +49,12 @@ export const router = new Router({
         path:'/login',
         name:'login',
         component:loginUser
-    }
+    },
+    // {
+    //     path:'/user',
+    //     name:'user',
+    //     component: () => import('./components/Home.vue')
+    // }
     ]
-})
+});
 

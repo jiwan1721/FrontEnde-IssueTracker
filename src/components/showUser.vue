@@ -26,7 +26,7 @@ import axios from 'axios';
             async getUserData(){
                 const header={'Authorization':' Token 352e534bdaa089d55262384574d99abb2afb69d'}
                 try {
-                    const response = await axios.get('api/user/',header);
+                    const response = await axios.get('user/',header);
                     this.users=response.data;
                     console.log("-----",this.users)
                 } catch (error){
